@@ -142,30 +142,113 @@ header h1{
 
 .testimonials-title{
     font-family: var(--title-font);
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--gray);
+    padding: 32px 0px;
+    letter-spacing: .2rem;
+}
+
+.client{
+    display: flex;
+    place-items: center;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
 }
 
 .client__avatar{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
 }
 
-.client__avatar:nth-child(1){
+.client__avatar.emily{
     background-image: url(./images/image-emily.jpg);
 }
 
-.client__avatar:nth-child(2){
+.client__avatar.thomas{
     background-image: url(./images/image-thomas.jpg);
 }
 
-.client__avatar:nth-child(3){
+.client__avatar.jennie{
     background-image: url(./images/image-jennie.jpg);
 }
 
 .client__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: .6;
+    line-height: 2rem;
+    padding: 0px 12px;
+}
 
+.client__name{
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.client__job{
+    color: var(--gray);
+    font-weight: 600;
+    padding: 16px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+
+.images img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #90d4c5;
+    height: 50vh;
+    padding: 64px 16px;
+    align-items: center;
+    gap: 80px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+.titulo{
+    font-family: var(--title-font);
+    color: var(--footer);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    font-family: var(--text-font);
+    color: var(--footer);
+    font-size: 1.2rem;
+    text-align: center;
+    gap: 48px;
+    font-weight: 600;
+    opacity: .9;
+    
+}
+
+.socials{
+    display: flex;
+    gap: 42px;
+}
+
+.socials img{
+    width: 1.4rem;
 }
